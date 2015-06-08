@@ -1,4 +1,4 @@
 StudentNotes
 ============
 
-This repository exists for reporting errors on the [Student Notes](https://learndvcs.github.io/x-DMIT-2018) site.
+This repository exists for reporting errors on the [Student Notes](http://dmit-2018.github.io/) site.
