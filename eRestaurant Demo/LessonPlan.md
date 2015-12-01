@@ -76,10 +76,14 @@ The following are draft outlines for lesson plans.
     * Command - Seat a walk-in customer
     * Show today's Reservations
     * Command - Seat a Reservation (multiple tables)
-* **Demos/Practice:** Waiter
-    * Customer Orders query/command
-* **Demos/Practice:** Kitchen
-    * Current orders query/command
+* **Demos:** Waiter - Query/Command
+    * Take Customer Orders
+    * Serve Order
+    * Split Bill - *Code-behind moving items between GridViews or ListViews*
+    * Combine Bills
+* **Practice:** Kitchen - Query/Command
+    * List current orders (by Bill/Table)
+    * Mark orders ready to serve
 * Front Desk
     * Table/Order Status
     * Modal Dialog - Pay Bill
