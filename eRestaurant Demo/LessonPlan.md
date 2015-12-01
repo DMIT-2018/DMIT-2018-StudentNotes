@@ -38,4 +38,37 @@ The following are draft outlines for lesson plans.
 * **Practice:** Manage Staff
     * `Waiter` entity + DbContext
     * Manage Waiters (+ add as a User and add to the roles `Staff` + `Waiters`)
+* Reservations - **Queries**
+    * Show reservations (for a particular date)
+    * Search reservations
+* Reservations - **Commands**
+    * Place reservations
+    * Change Reservation Status (cancelled, time change, etc.)
+* User Controls
+    * Emit Javascript to show a clock with the current date/time.
+        * http://www.sitepoint.com/10-cool-jquery-clock-tutorials-analog-digital/
+        * http://flipclockjs.com/
+        * http://lexxus.github.io/jq-timeTo/
+        * http://www.pageresource.com/jscript/jclock.htm
+        * https://www.washington.edu/accesscomputing/webd2/student/unit5/module2/lesson3.html
+        * http://www.webestools.com/scripts_tutorials-code-source-7-display-date-and-time-in-javascript-real-time-clock-javascript-date-time.html
+        * http://www.ricocheting.com/code/javascript/html-generator/date-time-clock
+        * http://www.javascriptkit.com/javatutors/time1.shtml
+        * http://time.is/widgets
+        * http://www.cssscript.com/animated-digital-led-clock-with-javascript-and-css/
+        * http://talkerscode.com/webtricks/digital-clock-with-complete-time-and-date-using-css-and-javascript.php
+        * https://googlecreativelab.github.io/coder-projects/projects/digital_clock/
+    * Get a Date/Time (for Mocking)
+* Front Desk
+    * Apply User Control - Show current Date/time clock
+    * LINQ - Get current table occupancy.
+    * Command - Seat a walk-in customer
+    * Show today's Reservations
+    * Command - Seat a Reservation (multiple tables)
+* Front Desk
+    * Mock Date/Time with Admin visibility
+* **Demos/Practice:** Waiter
+    * Customer Orders query/command
+* **Demos/Practice:** Kitchen
+    * Current orders query/command
 
