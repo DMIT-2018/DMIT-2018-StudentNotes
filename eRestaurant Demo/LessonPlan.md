@@ -2,16 +2,48 @@
 
 The following are draft outlines for lesson plans.
 
-## Layerd Architecture Review
-
-* Review main layers - PL/BLL/DAL/CBOs
-
-## Security
-
+* Review Layered Architecture
+   * PL/BLL/DAL/CBOs
+* Version Control
+   * Background (CVCS vs DVCS)
+   * git and GitHub
+   * Basic git Commands
+* ASP.NET Web Forms Website
+   * Project and Repository Setup
+* Databound Controls Overview
+   * Types of Databound Controls
+   * GridView Overview
+   * DetailsView Overview
+   * Repeater Overview
+   * ListView Overview
+   * DataSource Controls
+   * ObjectDataSource
+* Customizing Databound Controls
+   * Understanding Databound Templates
+   * Eval and Bind - Old School
+   * ItemType - New School
+   * FindControl
+* eRestaurant Overview
+   * The background story
+* Site Navigation
+   * Hard-code Links
+   * asp:HyperLink
+* Website Error Handling
+   * Try/Catch Review
+   * Site-Wide
+   * Custom 404
+   * Logging Options (NuGet)
+* Website Security
+   * Authentication vs Authorization
+   * History of ASP.NET Security
 * Intro to ASP.Net Identity
     * Run, Register User, Login/Logout + View Db tables
     * Move Identity classes to class library (`ApplicationUser`, `UserManager`, `ApplicationDbContext`)
     * Add `RoleManager` class (?and? `ApplicationRole` ?)
+* ASP.NET Identity in Web Forms Website
+   * ApplicationDbContext, ApplicationUser, and UserManager
+   * Migrating Identity classes to a class library
+   * The purpose of OWIN
 * Admin: Users - `~/Admin/Default.aspx`
     * GridView of Users, populate from Code-Behind => view
     * `GridView.AutoGenerateColumns = false` + `BoundColumns` for UserName, E-Mail and E-Mail Confirmed
@@ -26,28 +58,55 @@ The following are draft outlines for lesson plans.
         * Full syntax for Migrations (for when you have multiple DbContext classes)
 * Admin: Roles - `~/Admin/Default.aspx`
     * ListView to show roles (Insert/Delete) + number of users
-* Admin: Users
+* Admin: Users Revisited
     * Column to show users' roles
-* Admin: `Request.IsAuthenticated` + `.IsInRole()`
-    * `Response.Redirect` to Index page
-    * ?? Log an error ??
+* Authentication and Authorization
+   * Admin: `Request.IsAuthenticated` + `.IsInRole()`
+   * `Response.Redirect` to Index page
+   * Log unauthorized access attempt
 * Admin: User Roles
     * Add User to Role
     * Remove User from Role
-
-## eRestaurant
-
-* Entities + DAL
+* Entity Framework
+   * Code-First with Entity Framework
+   * Understanding Entity Framework in a Layered Architecture
+* Entities and the DbContext
     * `Item` + `Category` entities + `eRestaurantContext`
-* Manage Menu Items form (ListView)
+    * Navigation Properties
+    * Entity Attributes
+    * NotMapped Properties and Rich Entities
+    * Mapping the Whole Database
+* Per-Entity CRUD
+   * Basic CRUD in the DbContext
+* Manage Menu Items
     * BLL - CRUD approach (same object model for data regardless of create/read/update/delete)
     * `[DataObject]` attributes + `ObjectDataSource` and DataBound controls
-* `OurMenu.aspx`
+    * ListView for CRUD
+* LINQ Basics
+   * LINQ Overview
+   * LinqPad
+   * LINQ Query Syntax
+   * LINQ Method Syntax
+* LINQ to Entities
+   * Querying the Database in LinqPad
+   * Translating LinqPad queries to Entity Framework
+* Display the Menu
     * LINQ
+    * `OurMenu.aspx`
     * Nested Repeater
-* **Practice:** Manage Staff (Waiters only)
+* Report on Menu Items
+   * Microsoft Reports (and Crystal Reports)
+   * Menu Report (Popularity)
+   * Creating Flat POCOs in LINQ
+   * Creating Reports (.rdlc)
+   * ReportViewer Controls
+   * Customizing Reports
+* **Practice:** Manage Waiters
     * `Waiter` entity + DbContext
     * Manage Waiters (+ add as a User and add to the roles `Staff` + `Waiters`)
+* CQRS Principles
+   * What is CQRS
+   * How CQRS relates to Application Design
 * Reservations - **Queries**
     * Show reservations (for a particular date)
     * Search reservations (by name, by contact number, by date, by date-range)
@@ -70,22 +129,30 @@ The following are draft outlines for lesson plans.
         * https://googlecreativelab.github.io/coder-projects/projects/digital_clock/
     * Get a Date/Time (for Mocking)
     * Test page for using User Controls
-* Front Desk
+* Front Desk Use Cases
     * Apply User Control - Show current Date/time clock
     * LINQ - Get current table occupancy.
     * Command - Seat a walk-in customer
     * Show today's Reservations
     * Command - Seat a Reservation (multiple tables)
-* **Demos:** Waiter - Query/Command
+* **Demos:** Waiter Use Cases
+    * Query/Command Planning
     * Take Customer Orders
     * Serve Order
     * Split Bill - *Code-behind moving items between GridViews or ListViews*
     * Combine Bills
-* **Practice:** Kitchen - Query/Command
+* **Practice:** Kitchen Use Cases
+    * Query/Command Planning
     * List current orders (by Bill/Table)
     * Mark orders ready to serve
-* Front Desk
-    * Table/Order Status
+* Payment Use Cases
+    * Table/Order Status (Front Desk)
     * Modal Dialog - Pay Bill
-* Front Desk
+    * Real-World Payment Gateways
+* Revisiting the Front Desk
     * Mock Date/Time with Admin visibility
+    * See the Restaurant at a Point In Time
+* Database Deployment
+* Website Deployment
+* Infinity and Beyond!
+   * Continuous Integration
