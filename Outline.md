@@ -11,6 +11,7 @@
   * Customizing Databound Controls
   * eRestaurant Overview
   * Site Navigation
+  * Website Error Handling
   * Website Security
   * Intro to ASP.NET Identity
   * ASP.NET Identity in Web Forms Website
