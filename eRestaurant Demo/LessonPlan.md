@@ -10,6 +10,9 @@ The following are draft outlines for lesson plans.
    * Basic git Commands
 * ASP.NET Web Forms Website
    * Project and Repository Setup
+* Site Navigation
+   * Hard-code Links
+   * asp:HyperLink
 * Databound Controls Overview
    * Types of Databound Controls
    * GridView Overview
@@ -22,12 +25,9 @@ The following are draft outlines for lesson plans.
    * Understanding Databound Templates
    * Eval and Bind - Old School
    * ItemType - New School
-   * FindControl
+   * `.FindControl()` vs. Navigating GridView `.Rows` and ListView `.Items`
 * eRestaurant Overview
    * The background story
-* Site Navigation
-   * Hard-code Links
-   * asp:HyperLink
 * Website Error Handling
    * Try/Catch Review
    * Site-Wide
